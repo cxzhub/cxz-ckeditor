@@ -1,0 +1,15 @@
+.ck-fullscreen-overlay {
+  overflow: hidden;
+  --ck-z-modal: 8000;
+}
+.ck-fullscreen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 6000 !important;
+  max-height: 100vh !important;
+  height: 100vh !important;
+  width: 100vw !important;
+}

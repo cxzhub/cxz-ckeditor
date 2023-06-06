@@ -1,0 +1,60 @@
+{
+  "name": "@cxz/ckeditor5-build-decoupled-document",
+  "version": "1.0.0",
+  "description": "The document editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "keywords": [
+    "ckeditor5-build",
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "wysiwyg",
+    "rich text",
+    "editor",
+    "html",
+    "contentEditable",
+    "editing",
+    "operational transformation",
+    "ot",
+    "collaboration",
+    "collaborative",
+    "real-time",
+    "framework"
+  ],
+  "main": "./build/ckeditor.js",
+  "files": [
+    "build",
+    "ckeditor5-metadata.json",
+    "CHANGELOG.md"
+  ],
+  "devDependencies": {
+    "css-loader": "^5.2.7",
+    "postcss-loader": "^4.3.0",
+    "raw-loader": "^4.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "ts-loader": "^9.3.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=5.7.1"
+  },
+  "author": "CKSource (http://cksource.com/)",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-build-decoupled-document"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "preversion": "npm run build"
+  },
+  "dependencies": {
+    "@chenxingzhi1/ckeditor5-fullscreen": "workspace:^1.0.0",
+    "@chenxingzhi1/ckeditor5-paste-from-office": "workspace:^1.0.0"
+  }
+}
